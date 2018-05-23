@@ -12,9 +12,10 @@
   export default {
     mounted () {  //发请求
       this.getAddress()
+      this.getUserInfo()
     },
     methods: {
-      ...mapActions(['getAddress'])
+      ...mapActions(['getAddress', 'getUserInfo'])
     },
     components: {
       FooterGuide
@@ -23,7 +24,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  #app
+  .app
     width 100%
     height 100%
     background #f5f5f5
